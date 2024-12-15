@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#1-Grid</title>
+    <style>
+        .gridmain{
+    display: grid;
+        grid-template-areas: "headr headr headr headr headr headr headr headr" 
+        " Main1 Main1 Main1 Main1  Main1 Main1 Main2 Main2"
+        "Footer  Footer Footer Footer Footer Footer Footer Footer";
+
+                }
+
+    .headr{
+
+        background-color: black; 
+        grid-area:headr;
+            height: 120px;
+            margin:4px;
+                }
+    .Main1{
+        background-color: orange;
+        grid-area:Main1;
+        height: 280px;
+        margin:4px;          }
+    .Main2{
+
+        background-color: green;
+        grid-area: Main2;
+        margin:4px;
+            }
+
+    .Footer{
+
+        background-color: blue;
+        margin:4px;
+            grid-area: Footer;
+            height:80px;
+                }
+        </style>
+</head>
+<body>
+    <div class="gridmain">
+        <div class="headr"></div>
+        <div  class="Main1" ></div>
+        <div   class="Main2"></div>
+        <div  class="Footer"></div>
+    </div>
+</body>
+</html>
